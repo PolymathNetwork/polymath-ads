@@ -256,6 +256,6 @@ jQuery(document).ready(function(){
 })
 
 function animateTrianglePoly(what_poly){
-	TweenMax.set(what_poly, {left:Math.random()*100+"%", rotation:Math.random()*360, top:90+Math.random()*30, scale:Math.random()*.5+.5, opacity:Math.random()*.3+.3})
+	TweenMax.set(what_poly, {left:Math.random()*100+"%", rotation:Math.random()*360, top:90+Math.random()*30, scale:Math.random()*.5+.5, opacity:Math.random()*.3+.6})
 	TweenMax.to(what_poly, 3+Math.random()*6, { rotation:Math.random()*360, top:-what_poly.height()-Math.random()*30, onComplete:animateTrianglePoly, onCompleteParams:[what_poly], ease:Linear.easeNone})
 }
